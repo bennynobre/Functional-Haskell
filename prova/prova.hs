@@ -18,7 +18,7 @@ index x ys
    | otherwise = 1 + (index x (tail ys))
 
 
--- Procure o indice de um elemento x em uma lista xs usando foldl
+
 index_of_fold :: Int -> [Int] -> Int
 index_of_fold x xs = foldl (\acc x -> if x == xs then acc else acc + 1) 0 xs
 
